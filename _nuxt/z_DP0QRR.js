@@ -1,0 +1,1 @@
+import{_ as e}from"./DlAUqK2U.js";import{c as o,o as s,y as n}from"./BtQ73GUy.js";const r={},c={class:"text-3xl sm:text-5xl lg:text-6xl lg:font-semibold font-medium font-serif m-0"};function _(t,l){return s(),o("h2",c,[n(t.$slots,"default")])}const a=e(r,[["render",_]]);export{a as _};
