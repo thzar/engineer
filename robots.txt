@@ -1,0 +1,7 @@
+# START nuxt-robots (indexable)
+User-agent: *
+Allow: /
+Disallow: /blog
+
+Sitemap: https://theonlyengineer.com/sitemap.xml
+# END nuxt-robots
