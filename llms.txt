@@ -1,0 +1,126 @@
+# Nizar — theonlyengineer.com
+
+> Nizar is a GenAI and software engineer working at the intersection of
+> generative-AI systems and the infrastructure that runs them: RAG and agent
+> pipelines, LLM integration, and the HPC, cloud, and DevOps platforms
+> underneath. Available for fractional AI-lead and build work.
+
+## About
+
+- [Home](https://theonlyengineer.com): positioning, services, and selected work.
+- [Privacy policy](https://theonlyengineer.com/privacy): what this site collects.
+- Contact: nizar@theonlyengineer.com
+- Code: https://github.com/theonlyengineer
+
+## Services
+
+- Fractional AI Lead — embedded 1-2 days/week as the GenAI decision-maker: architecture, build oversight, team upskilling.
+- RAG / Agent Build — a specific RAG pipeline or agent workflow, scoped and priced upfront, shipped end-to-end.
+- LLM Integration — an LLM feature taken from spike to production: evaluation, guardrails, cost and latency tuning.
+- GenAI Architecture Review — a short, paid audit of an existing GenAI system with a written, prioritized fix list.
+
+## Writing
+
+- [Blog](https://theonlyengineer.com/blog): index of all posts.
+- [RSS feed](https://theonlyengineer.com/rss.xml)
+
+Posts are written in series. Each series is one argument, in order.
+
+### Agents in production
+
+An LLM agent that works in a demo and an LLM agent you can put in front of users are different artifacts. This series is about the second one: how narrow to scope it, why orchestration is not reasoning, where long-running work actually belongs, and what breaks first.
+
+1. [What it actually takes to put an LLM agent in production](https://theonlyengineer.com/blog/what-it-takes-to-ship-an-llm-agent): The checklist that separates a working demo from a system you can leave running: scope, control flow, queues, evaluation, constraints, cost and visibility. (published 2026-08-27)
+2. [Your agent doesn't need to be smart. It needs to be narrow.](https://theonlyengineer.com/blog/narrow-agents-beat-smart-ones): A boring agent that produces a useful artifact every time beats a clever one that mostly does. How to scope a task narrowly enough to be validated, tested and trusted. (published 2026-08-27)
+3. [Long-running agents belong in a queue, not a request](https://theonlyengineer.com/blog/long-running-agents-belong-in-a-queue): Why multi-step generation cannot live in an HTTP request, what the queue-plus-stream architecture looks like, and the worker settings that decide whether it degrades gracefully. (published 2026-08-27)
+4. [An agent is a state machine with an LLM picking the transitions](https://theonlyengineer.com/blog/an-agent-is-a-state-machine): Orchestration is not reasoning. Which decisions to encode in code, which to leave to the model, and what an explicit generation graph buys you. (published 2026-08-27)
+
+### Making LLM output trustworthy
+
+You cannot unit-test a probability distribution, but you can constrain it, measure it, and watch it. This series covers evaluating an LLM feature before you ship it, forcing structure instead of reviewing prose, testing one prompt a hundred times, and instrumenting what the model actually did.
+
+1. [How to evaluate an LLM feature before you ship it](https://theonlyengineer.com/blog/how-to-evaluate-an-llm-feature): Why normal testing doesn't work on a probability distribution, what goes in an adversarial case set, and how to score it without fooling yourself. (published 2026-08-27)
+2. [Constrain the model, don't review its output](https://theonlyengineer.com/blog/constrain-the-model-dont-review-it): Inconsistent generated output is a constraint problem, not a capability problem. Schemas and closed vocabularies beat review queues, and here is why. (published 2026-08-27)
+3. [Test one prompt a hundred times, not a hundred prompts once](https://theonlyengineer.com/blog/test-one-prompt-a-hundred-times): Single-run prompt testing hides variance, tail latency, token spread and intermittent misbehaviour. How to build the batch harness that surfaces them. (published 2026-08-27)
+4. [You can't debug what you can't see: observability for LLM features](https://theonlyengineer.com/blog/observability-for-llm-features): What to record on every model call, why the rendered prompt is the field that matters most, and why instrumentation has to exist before the first incident. (published 2026-08-27)
+
+### The architecture and cost of LLM features
+
+Most production systems want AI at the edges and deterministic code in the core. This series is about making that placement call deliberately: what to model and what to write as rules, what an LLM feature really costs to run at volume, and what context it needs to be worth anything.
+
+1. [Where AI belongs in your architecture — and where it doesn't](https://theonlyengineer.com/blog/where-ai-belongs-in-your-architecture): Models at the edges, deterministic code in the core. The patterns that don't need a model, the ones where it earns its keep, and the question to ask before adding it. (published 2026-08-27)
+2. [What an LLM feature actually costs to run](https://theonlyengineer.com/blog/what-an-llm-feature-costs-to-run): Cost is steps times tokens times retries, the failures dominate, and the pilot will not show you. The four buckets to model and the levers that actually move the bill. (published 2026-08-27)
+3. [The most expensive call is the one that fails after trying hardest](https://theonlyengineer.com/blog/the-most-expensive-call-is-the-one-that-fails): In a step-billed system your costliest interactions are the ones the model works hardest on and still can't finish. The effort paradox, and the four controls that bound it. (published 2026-08-27)
+4. [Context is the hard part, and nobody sets out to build it](https://theonlyengineer.com/blog/context-is-the-hard-part): Why the same AI feature works at one company and fails at another: canonical definitions, current signals, and quality enforcement — the layers nobody budgets for. (published 2026-08-27)
+
+### Other posts
+
+- [Modernizing OnPrem Infrastructure](https://theonlyengineer.com/blog/modernizing-on-prem-infrastructure): Bringing cloud-native tools into your on-prem infrastructure for automation and resiliency. (published 2026-08-13)
+- [Automating HPC Infrastructure](https://theonlyengineer.com/blog/automating-hpc-infrastructure): Using Apache CloudStack to manage cloud resources in your on-prem infrastructure. (published 2026-08-13)
+
+## Courses
+
+Free, interactive, browser-based courses.
+
+- [All courses](https://theonlyengineer.com/courses)
+
+- [Linux Basics](https://theonlyengineer.com/courses/linux-basics): The command line, from zero. Learn how the shell actually works, how to move around a filesystem, and how to read the permissions and processes that everything else in Linux is built on.
+  - [What Is a Shell?](https://theonlyengineer.com/courses/linux-basics/what-is-a-shell): What you're actually talking to when you open a terminal.
+  - [Navigating the Filesystem](https://theonlyengineer.com/courses/linux-basics/navigating-the-filesystem): pwd, ls, and cd — and the tree they move you through.
+  - [Files and Directories](https://theonlyengineer.com/courses/linux-basics/files-and-directories): Creating, copying, moving, and deleting things without regret.
+  - [Reading and Editing Files](https://theonlyengineer.com/courses/linux-basics/reading-and-editing-files): cat, less, and surviving your first encounter with vim.
+  - [Permissions](https://theonlyengineer.com/courses/linux-basics/permissions): Why 'Permission denied' happens, and what rwx and chmod 644 really mean.
+  - [Processes](https://theonlyengineer.com/courses/linux-basics/processes): Every running thing has a number. Find it, watch it, stop it.
+  - [Pipes and Redirection](https://theonlyengineer.com/courses/linux-basics/pipes-and-redirection): The idea that makes the whole command line worth learning.
+- [Shell Scripting](https://theonlyengineer.com/courses/shell-scripting): Write shell scripts that survive contact with a real machine. Variables, quoting, exit status, loops, functions, and redirection — in portable POSIX sh, the shell that exists in every container and CI image.
+  - [Your First Script](https://theonlyengineer.com/courses/shell-scripting/your-first-script): A file, a shebang, and the two ways to run it.
+  - [Variables](https://theonlyengineer.com/courses/shell-scripting/variables): Holding a value, and the two rules about spaces and quotes.
+  - [Quoting and Wildcards](https://theonlyengineer.com/courses/shell-scripting/quoting-and-wildcards): What the shell does to your line before anything runs.
+  - [Exit Status and test](https://theonlyengineer.com/courses/shell-scripting/exit-status-and-test): How a script finds out whether the last thing worked.
+  - [Loops](https://theonlyengineer.com/courses/shell-scripting/loops): Every file, every line, until it works — and the empty-glob trap.
+  - [Case and Arguments](https://theonlyengineer.com/courses/shell-scripting/case-and-arguments): Branching on a value, and reading what the script was called with.
+  - [Command Substitution](https://theonlyengineer.com/courses/shell-scripting/command-substitution): Capturing a program’s output as a value, and where the newlines go.
+  - [Functions](https://theonlyengineer.com/courses/shell-scripting/functions): Naming a block, and why return doesn’t return a value.
+  - [Redirection and Here-Documents](https://theonlyengineer.com/courses/shell-scripting/redirection-and-heredocs): Three streams, and why 2>&1 has to come second.
+  - [Scripts That Survive](https://theonlyengineer.com/courses/shell-scripting/scripts-that-survive): set -eu, trap, mktemp — the habits that make a script safe to run unattended.
+- [Docker Fundamentals](https://theonlyengineer.com/courses/docker-fundamentals): Docker from zero, correct for the current release. Containers and images, Dockerfiles, layers and the build cache, volumes, networking, and Compose — with the traps that most tutorials are still teaching wrong.
+  - [What Docker Is](https://theonlyengineer.com/courses/docker-fundamentals/what-docker-is): The CLI, the daemon, containerd, and the difference between an image and a container.
+  - [Running Containers](https://theonlyengineer.com/courses/docker-fundamentals/running-containers): The flags that make up most of what anyone types, and why containers exit.
+  - [Images and Registries](https://theonlyengineer.com/courses/docker-fundamentals/images-and-registries): Reading an image name, why `latest` is not the latest, and choosing a base.
+  - [Your First Dockerfile](https://theonlyengineer.com/courses/docker-fundamentals/your-first-dockerfile): Building your own image, and CMD versus ENTRYPOINT.
+  - [Layers and the Build Cache](https://theonlyengineer.com/courses/docker-fundamentals/layers-and-the-cache): Why instruction order is a performance decision, and why deleting a file does not shrink an image.
+  - [Volumes and Data](https://theonlyengineer.com/courses/docker-fundamentals/volumes-and-data): Where state goes when the container is deleted — and the volume that quietly fills your disk.
+  - [Networking](https://theonlyengineer.com/courses/docker-fundamentals/networking): Publishing ports, and the one networking fact that makes containers find each other.
+  - [Compose](https://theonlyengineer.com/courses/docker-fundamentals/compose): One file instead of eleven flags — and why the CLI jumped from v2 to v5.
+  - [Debugging and Cleanup](https://theonlyengineer.com/courses/docker-fundamentals/debugging-and-cleanup): Exit code 137, the commands that answer which question, and reclaiming the disk.
+- [Docker in Practice](https://theonlyengineer.com/courses/docker-in-practice): The working engineer’s Docker: multi-stage builds, BuildKit cache and secret mounts, multi-platform images, Bake, the Compose features a real project needs, lifecycle done properly, and build cache that survives CI.
+  - [Multi-Stage Builds](https://theonlyengineer.com/courses/docker-in-practice/multi-stage-builds): Stop shipping the compiler. One keyword, two orders of magnitude.
+  - [BuildKit and Mounts](https://theonlyengineer.com/courses/docker-in-practice/buildkit-and-mounts): The syntax line, heredocs, and cache mounts that never enter the image.
+  - [Secrets and Configuration](https://theonlyengineer.com/courses/docker-in-practice/secrets-and-configuration): Every way a credential ends up in a layer, and the one way it does not.
+  - [Multi-Platform Images](https://theonlyengineer.com/courses/docker-in-practice/multi-platform-images): One tag for ARM and x86 — emulation, cross-compilation, or native nodes.
+  - [Docker Bake](https://theonlyengineer.com/courses/docker-in-practice/docker-bake): Declarative builds, and the builder Compose v5 now delegates to.
+  - [Compose for Real Applications](https://theonlyengineer.com/courses/docker-in-practice/compose-for-real-apps): Overrides, profiles, include, and init containers that replace entrypoint scripts.
+  - [Compose Watch](https://theonlyengineer.com/courses/docker-in-practice/compose-watch): A development loop without rebuilds, and why it beats a bind mount.
+  - [Healthchecks and Signals](https://theonlyengineer.com/courses/docker-in-practice/healthchecks-and-signals): Starting, stopping, and failing on purpose — including the ten-second stop.
+  - [Build Cache Across Machines](https://theonlyengineer.com/courses/docker-in-practice/build-cache-across-machines): Making CI as fast as your laptop, and the flag everyone forgets.
+  - [Small Images on Purpose](https://theonlyengineer.com/courses/docker-in-practice/small-images-on-purpose): Measure first, then the moves that matter — and when to stop.
+- [Containers From Scratch](https://theonlyengineer.com/courses/containers-from-scratch): Build a container by hand from the Linux primitives underneath it — namespaces, cgroups, chroot, veth pairs, NAT, and copy-on-write snapshots. No container runtime is installed at any point, and by the end the whole stack stops being magic.
+  - [What a Container Really Is](https://theonlyengineer.com/courses/containers-from-scratch/what-a-container-really-is): Not a small VM — a process that has been lied to.
+  - [Namespaces](https://theonlyengineer.com/courses/containers-from-scratch/namespaces): The mechanism that decides what a process can see.
+  - [The Root Filesystem](https://theonlyengineer.com/courses/containers-from-scratch/the-root-filesystem): chroot, a real Alpine userland, and why /proc has to be mounted.
+  - [Copy-on-Write](https://theonlyengineer.com/courses/containers-from-scratch/copy-on-write): btrfs snapshots, and what an image layer actually is.
+  - [Networking](https://theonlyengineer.com/courses/containers-from-scratch/networking): A network namespace, a bridge, and a virtual cable between them.
+  - [NAT](https://theonlyengineer.com/courses/containers-from-scratch/nat): Three iptables rules that get a private address onto the internet.
+  - [Control Groups](https://theonlyengineer.com/courses/containers-from-scratch/cgroups): Capping what a container consumes, and where OOMKilled comes from.
+  - [Assembling a Container](https://theonlyengineer.com/courses/containers-from-scratch/assembling-a-container): One command, four cages, and a shell that believes it owns the machine.
+  - [Cleanup, and What Docker Adds](https://theonlyengineer.com/courses/containers-from-scratch/cleanup-and-what-docker-adds): Tearing it down, and the debugging map the whole thing adds up to.
+- [Docker in Production](https://theonlyengineer.com/courses/docker-in-production): What changes when containers carry real traffic: the daemon’s internals, dropping privileges, resource limits, SBOMs and provenance, Scout, hardened base images, Sigstore signing, observability, and running AI models with Model Runner.
+  - [The Engine Underneath](https://theonlyengineer.com/courses/docker-in-production/the-engine-underneath): dockerd, containerd, shims and runc — and why containers survive a daemon restart.
+  - [Container Security](https://theonlyengineer.com/courses/docker-in-production/container-security): Non-root, dropped capabilities, seccomp, read-only roots, and rootless mode.
+  - [Resource Limits](https://theonlyengineer.com/courses/docker-in-production/resource-limits): Capping memory and CPU, and why your runtime cannot see the limit.
+  - [Supply Chain and Attestations](https://theonlyengineer.com/courses/docker-in-production/supply-chain-and-attestations): SBOMs, provenance, and why production deploys by digest.
+  - [Docker Scout](https://theonlyengineer.com/courses/docker-in-production/docker-scout): Turning a CVE list into a task list — and gating on the delta, not the total.
+  - [Hardened Base Images](https://theonlyengineer.com/courses/docker-in-production/hardened-base-images): Distroless, DHI, and VEX: removing packages instead of triaging them.
+  - [Signing and Trust](https://theonlyengineer.com/courses/docker-in-production/signing-and-trust): Content Trust is gone. Sigstore, cosign, and what a signature actually proves.
+  - [Observability](https://theonlyengineer.com/courses/docker-in-production/observability): Logging drivers, events, and finding the crash loop that looks healthy.
+  - [AI Workloads](https://theonlyengineer.com/courses/docker-in-production/ai-workloads): Model Runner, models in Compose, GPUs, and what is different about operating a model.

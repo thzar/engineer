@@ -1,0 +1,265 @@
+[
+	{
+		"title": "What it actually takes to put an LLM agent in production",
+		"slug": "what-it-takes-to-ship-an-llm-agent",
+		"subtitle": "Agents in production",
+		"description": "The checklist that separates a working demo from a system you can leave running: scope, control flow, queues, evaluation, constraints, cost and visibility.",
+		"tags": [
+			"agents",
+			"production",
+			"llm"
+		],
+		"src": "what-it-takes-to-ship-an-llm-agent.md",
+		"thumbnail": "/blog/images/what-it-takes-to-ship-an-llm-agent.webp",
+		"series": "agents-in-production",
+		"part": 1,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1878,
+		"minutes": 9
+	},
+	{
+		"title": "Your agent doesn't need to be smart. It needs to be narrow.",
+		"slug": "narrow-agents-beat-smart-ones",
+		"subtitle": "Agents in production",
+		"description": "A boring agent that produces a useful artifact every time beats a clever one that mostly does. How to scope a task narrowly enough to be validated, tested and trusted.",
+		"tags": [
+			"agents",
+			"production"
+		],
+		"src": "narrow-agents-beat-smart-ones.md",
+		"thumbnail": "/blog/images/narrow-agents-beat-smart-ones.webp",
+		"series": "agents-in-production",
+		"part": 2,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1351,
+		"minutes": 7
+	},
+	{
+		"title": "Long-running agents belong in a queue, not a request",
+		"slug": "long-running-agents-belong-in-a-queue",
+		"subtitle": "Agents in production",
+		"description": "Why multi-step generation cannot live in an HTTP request, what the queue-plus-stream architecture looks like, and the worker settings that decide whether it degrades gracefully.",
+		"tags": [
+			"agents",
+			"architecture",
+			"production"
+		],
+		"src": "long-running-agents-belong-in-a-queue.md",
+		"thumbnail": "/blog/images/long-running-agents-belong-in-a-queue.webp",
+		"series": "agents-in-production",
+		"part": 3,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1364,
+		"minutes": 7
+	},
+	{
+		"title": "An agent is a state machine with an LLM picking the transitions",
+		"slug": "an-agent-is-a-state-machine",
+		"subtitle": "Agents in production",
+		"description": "Orchestration is not reasoning. Which decisions to encode in code, which to leave to the model, and what an explicit generation graph buys you.",
+		"tags": [
+			"agents",
+			"architecture"
+		],
+		"src": "an-agent-is-a-state-machine.md",
+		"thumbnail": "/blog/images/an-agent-is-a-state-machine.webp",
+		"series": "agents-in-production",
+		"part": 4,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1278,
+		"minutes": 6
+	},
+	{
+		"title": "How to evaluate an LLM feature before you ship it",
+		"slug": "how-to-evaluate-an-llm-feature",
+		"subtitle": "Making LLM output trustworthy",
+		"description": "Why normal testing doesn't work on a probability distribution, what goes in an adversarial case set, and how to score it without fooling yourself.",
+		"tags": [
+			"evals",
+			"llm",
+			"testing"
+		],
+		"src": "how-to-evaluate-an-llm-feature.md",
+		"thumbnail": "/blog/images/how-to-evaluate-an-llm-feature.webp",
+		"series": "trustworthy-llm-output",
+		"part": 1,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1341,
+		"minutes": 7
+	},
+	{
+		"title": "Constrain the model, don't review its output",
+		"slug": "constrain-the-model-dont-review-it",
+		"subtitle": "Making LLM output trustworthy",
+		"description": "Inconsistent generated output is a constraint problem, not a capability problem. Schemas and closed vocabularies beat review queues, and here is why.",
+		"tags": [
+			"llm",
+			"architecture",
+			"testing"
+		],
+		"src": "constrain-the-model-dont-review-it.md",
+		"thumbnail": "/blog/images/constrain-the-model-dont-review-it.webp",
+		"series": "trustworthy-llm-output",
+		"part": 2,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1273,
+		"minutes": 6
+	},
+	{
+		"title": "Test one prompt a hundred times, not a hundred prompts once",
+		"slug": "test-one-prompt-a-hundred-times",
+		"subtitle": "Making LLM output trustworthy",
+		"description": "Single-run prompt testing hides variance, tail latency, token spread and intermittent misbehaviour. How to build the batch harness that surfaces them.",
+		"tags": [
+			"evals",
+			"testing",
+			"llm"
+		],
+		"src": "test-one-prompt-a-hundred-times.md",
+		"thumbnail": "/blog/images/test-one-prompt-a-hundred-times.webp",
+		"series": "trustworthy-llm-output",
+		"part": 3,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1135,
+		"minutes": 6
+	},
+	{
+		"title": "You can't debug what you can't see: observability for LLM features",
+		"slug": "observability-for-llm-features",
+		"subtitle": "Making LLM output trustworthy",
+		"description": "What to record on every model call, why the rendered prompt is the field that matters most, and why instrumentation has to exist before the first incident.",
+		"tags": [
+			"observability",
+			"production",
+			"llm"
+		],
+		"src": "observability-for-llm-features.md",
+		"thumbnail": "/blog/images/observability-for-llm-features.webp",
+		"series": "trustworthy-llm-output",
+		"part": 4,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1204,
+		"minutes": 6
+	},
+	{
+		"title": "Where AI belongs in your architecture — and where it doesn't",
+		"slug": "where-ai-belongs-in-your-architecture",
+		"subtitle": "The architecture and cost of LLM features",
+		"description": "Models at the edges, deterministic code in the core. The patterns that don't need a model, the ones where it earns its keep, and the question to ask before adding it.",
+		"tags": [
+			"architecture",
+			"llm",
+			"cost"
+		],
+		"src": "where-ai-belongs-in-your-architecture.md",
+		"thumbnail": "/blog/images/where-ai-belongs-in-your-architecture.webp",
+		"series": "llm-architecture-and-cost",
+		"part": 1,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1230,
+		"minutes": 6
+	},
+	{
+		"title": "What an LLM feature actually costs to run",
+		"slug": "what-an-llm-feature-costs-to-run",
+		"subtitle": "The architecture and cost of LLM features",
+		"description": "Cost is steps times tokens times retries, the failures dominate, and the pilot will not show you. The four buckets to model and the levers that actually move the bill.",
+		"tags": [
+			"cost",
+			"architecture",
+			"production"
+		],
+		"src": "what-an-llm-feature-costs-to-run.md",
+		"thumbnail": "/blog/images/what-an-llm-feature-costs-to-run.webp",
+		"series": "llm-architecture-and-cost",
+		"part": 2,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1238,
+		"minutes": 6
+	},
+	{
+		"title": "The most expensive call is the one that fails after trying hardest",
+		"slug": "the-most-expensive-call-is-the-one-that-fails",
+		"subtitle": "The architecture and cost of LLM features",
+		"description": "In a step-billed system your costliest interactions are the ones the model works hardest on and still can't finish. The effort paradox, and the four controls that bound it.",
+		"tags": [
+			"cost",
+			"agents",
+			"production"
+		],
+		"src": "the-most-expensive-call-is-the-one-that-fails.md",
+		"thumbnail": "/blog/images/the-most-expensive-call-is-the-one-that-fails.webp",
+		"series": "llm-architecture-and-cost",
+		"part": 3,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1248,
+		"minutes": 6
+	},
+	{
+		"title": "Context is the hard part, and nobody sets out to build it",
+		"slug": "context-is-the-hard-part",
+		"subtitle": "The architecture and cost of LLM features",
+		"description": "Why the same AI feature works at one company and fails at another: canonical definitions, current signals, and quality enforcement — the layers nobody budgets for.",
+		"tags": [
+			"context",
+			"architecture",
+			"production"
+		],
+		"src": "context-is-the-hard-part.md",
+		"thumbnail": "/blog/images/context-is-the-hard-part.webp",
+		"series": "llm-architecture-and-cost",
+		"part": 4,
+		"date": "2026-08-27",
+		"updated": "2026-08-27",
+		"words": 1302,
+		"minutes": 7
+	},
+	{
+		"title": "Automating HPC Infrastructure",
+		"slug": "automating-hpc-infrastructure",
+		"subtitle": "Driving HPC Forward",
+		"description": "Using Apache CloudStack to manage cloud resources in your on-prem infrastructure.",
+		"tags": [
+			"hpc",
+			"cloudstack"
+		],
+		"src": "2.modernizing-hpc.md",
+		"thumbnail": "/blog/images/automating-hpc-infrastructure.webp",
+		"series": null,
+		"part": null,
+		"date": "2026-08-13",
+		"updated": "2026-08-13",
+		"words": 1692,
+		"minutes": 8
+	},
+	{
+		"title": "Modernizing OnPrem Infrastructure",
+		"slug": "modernizing-on-prem-infrastructure",
+		"subtitle": "Driving HPC Forward",
+		"description": "Bringing cloud-native tools into your on-prem infrastructure for automation and resiliency.",
+		"tags": [
+			"hpc",
+			"cloudstack",
+			"virtualization"
+		],
+		"src": "1.modernizing-hpc.md",
+		"thumbnail": "/blog/images/modernizing-on-prem-infrastructure.webp",
+		"series": null,
+		"part": null,
+		"date": "2026-08-13",
+		"updated": "2026-08-13",
+		"words": 958,
+		"minutes": 5
+	}
+]

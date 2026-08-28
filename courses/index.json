@@ -1,0 +1,583 @@
+[
+  {
+    "slug": "linux-basics",
+    "title": "Linux Basics",
+    "subtitle": "Start at the prompt",
+    "description": "The command line, from zero. Learn how the shell actually works, how to move around a filesystem, and how to read the permissions and processes that everything else in Linux is built on.",
+    "level": "Beginner",
+    "tags": [
+      "linux",
+      "shell",
+      "terminal"
+    ],
+    "lessons": [
+      {
+        "slug": "what-is-a-shell",
+        "title": "What Is a Shell?",
+        "summary": "What you're actually talking to when you open a terminal.",
+        "src": "01-what-is-a-shell.md",
+        "minutes": 6
+      },
+      {
+        "slug": "navigating-the-filesystem",
+        "title": "Navigating the Filesystem",
+        "summary": "pwd, ls, and cd \u2014 and the tree they move you through.",
+        "src": "02-navigating-the-filesystem.md",
+        "minutes": 8
+      },
+      {
+        "slug": "files-and-directories",
+        "title": "Files and Directories",
+        "summary": "Creating, copying, moving, and deleting things without regret.",
+        "src": "03-files-and-directories.md",
+        "minutes": 9
+      },
+      {
+        "slug": "reading-and-editing-files",
+        "title": "Reading and Editing Files",
+        "summary": "cat, less, and surviving your first encounter with vim.",
+        "src": "04-reading-and-editing-files.md",
+        "minutes": 8
+      },
+      {
+        "slug": "permissions",
+        "title": "Permissions",
+        "summary": "Why 'Permission denied' happens, and what rwx and chmod 644 really mean.",
+        "src": "05-permissions.md",
+        "minutes": 10
+      },
+      {
+        "slug": "processes",
+        "title": "Processes",
+        "summary": "Every running thing has a number. Find it, watch it, stop it.",
+        "src": "06-processes.md",
+        "minutes": 9
+      },
+      {
+        "slug": "pipes-and-redirection",
+        "title": "Pipes and Redirection",
+        "summary": "The idea that makes the whole command line worth learning.",
+        "src": "07-pipes-and-redirection.md",
+        "minutes": 10
+      }
+    ],
+    "date": "2026-08-19",
+    "updated": "2026-08-19"
+  },
+  {
+    "slug": "shell-scripting",
+    "title": "Shell Scripting",
+    "subtitle": "From one-liners to something you can trust",
+    "description": "Write shell scripts that survive contact with a real machine. Variables, quoting, exit status, loops, functions, and redirection \u2014 in portable POSIX sh, the shell that exists in every container and CI image.",
+    "level": "Intermediate",
+    "tags": [
+      "shell",
+      "bash",
+      "scripting",
+      "linux"
+    ],
+    "lessons": [
+      {
+        "slug": "your-first-script",
+        "title": "Your First Script",
+        "summary": "A file, a shebang, and the two ways to run it.",
+        "src": "01-your-first-script.md",
+        "minutes": 10
+      },
+      {
+        "slug": "variables",
+        "title": "Variables",
+        "summary": "Holding a value, and the two rules about spaces and quotes.",
+        "src": "02-variables.md",
+        "minutes": 9
+      },
+      {
+        "slug": "quoting-and-wildcards",
+        "title": "Quoting and Wildcards",
+        "summary": "What the shell does to your line before anything runs.",
+        "src": "03-quoting-and-wildcards.md",
+        "minutes": 9
+      },
+      {
+        "slug": "exit-status-and-test",
+        "title": "Exit Status and test",
+        "summary": "How a script finds out whether the last thing worked.",
+        "src": "04-exit-status-and-test.md",
+        "minutes": 12
+      },
+      {
+        "slug": "loops",
+        "title": "Loops",
+        "summary": "Every file, every line, until it works \u2014 and the empty-glob trap.",
+        "src": "05-loops.md",
+        "minutes": 10
+      },
+      {
+        "slug": "case-and-arguments",
+        "title": "Case and Arguments",
+        "summary": "Branching on a value, and reading what the script was called with.",
+        "src": "06-case-and-arguments.md",
+        "minutes": 10
+      },
+      {
+        "slug": "command-substitution",
+        "title": "Command Substitution",
+        "summary": "Capturing a program\u2019s output as a value, and where the newlines go.",
+        "src": "07-command-substitution.md",
+        "minutes": 10
+      },
+      {
+        "slug": "functions",
+        "title": "Functions",
+        "summary": "Naming a block, and why return doesn\u2019t return a value.",
+        "src": "08-functions.md",
+        "minutes": 11
+      },
+      {
+        "slug": "redirection-and-heredocs",
+        "title": "Redirection and Here-Documents",
+        "summary": "Three streams, and why 2>&1 has to come second.",
+        "src": "09-redirection-and-heredocs.md",
+        "minutes": 12
+      },
+      {
+        "slug": "scripts-that-survive",
+        "title": "Scripts That Survive",
+        "summary": "set -eu, trap, mktemp \u2014 the habits that make a script safe to run unattended.",
+        "src": "10-scripts-that-survive.md",
+        "minutes": 13
+      }
+    ],
+    "date": "2026-08-28",
+    "updated": "2026-08-28"
+  },
+  {
+    "slug": "docker-fundamentals",
+    "title": "Docker Fundamentals",
+    "subtitle": "Everything you type in a normal week",
+    "description": "Docker from zero, correct for the current release. Containers and images, Dockerfiles, layers and the build cache, volumes, networking, and Compose \u2014 with the traps that most tutorials are still teaching wrong.",
+    "level": "Beginner",
+    "tags": [
+      "docker",
+      "containers",
+      "compose",
+      "devops"
+    ],
+    "lessons": [
+      {
+        "slug": "what-docker-is",
+        "title": "What Docker Is",
+        "summary": "The CLI, the daemon, containerd, and the difference between an image and a container.",
+        "src": "01-what-docker-is.md",
+        "minutes": 11
+      },
+      {
+        "slug": "running-containers",
+        "title": "Running Containers",
+        "summary": "The flags that make up most of what anyone types, and why containers exit.",
+        "src": "02-running-containers.md",
+        "minutes": 11
+      },
+      {
+        "slug": "images-and-registries",
+        "title": "Images and Registries",
+        "summary": "Reading an image name, why `latest` is not the latest, and choosing a base.",
+        "src": "03-images-and-registries.md",
+        "minutes": 11
+      },
+      {
+        "slug": "your-first-dockerfile",
+        "title": "Your First Dockerfile",
+        "summary": "Building your own image, and CMD versus ENTRYPOINT.",
+        "src": "04-your-first-dockerfile.md",
+        "minutes": 11
+      },
+      {
+        "slug": "layers-and-the-cache",
+        "title": "Layers and the Build Cache",
+        "summary": "Why instruction order is a performance decision, and why deleting a file does not shrink an image.",
+        "src": "05-layers-and-the-cache.md",
+        "minutes": 11
+      },
+      {
+        "slug": "volumes-and-data",
+        "title": "Volumes and Data",
+        "summary": "Where state goes when the container is deleted \u2014 and the volume that quietly fills your disk.",
+        "src": "06-volumes-and-data.md",
+        "minutes": 11
+      },
+      {
+        "slug": "networking",
+        "title": "Networking",
+        "summary": "Publishing ports, and the one networking fact that makes containers find each other.",
+        "src": "07-networking.md",
+        "minutes": 11
+      },
+      {
+        "slug": "compose",
+        "title": "Compose",
+        "summary": "One file instead of eleven flags \u2014 and why the CLI jumped from v2 to v5.",
+        "src": "08-compose.md",
+        "minutes": 11
+      },
+      {
+        "slug": "debugging-and-cleanup",
+        "title": "Debugging and Cleanup",
+        "summary": "Exit code 137, the commands that answer which question, and reclaiming the disk.",
+        "src": "09-debugging-and-cleanup.md",
+        "minutes": 13
+      }
+    ],
+    "pinned": {
+      "versions": [
+        {
+          "name": "Docker Engine",
+          "version": "29.7.2"
+        },
+        {
+          "name": "Docker Compose",
+          "version": "v5.5.0"
+        },
+        {
+          "name": "Buildx",
+          "version": "v0.36.1"
+        },
+        {
+          "name": "BuildKit",
+          "version": "v0.32.2"
+        },
+        {
+          "name": "Dockerfile frontend",
+          "version": "1.26.0"
+        },
+        {
+          "name": "Docker Desktop",
+          "version": "4.88.1"
+        }
+      ],
+      "docs": {
+        "label": "docs.docker.com",
+        "url": "https://docs.docker.com/"
+      },
+      "checked": "2026-08-28"
+    },
+    "date": "2026-08-28",
+    "updated": "2026-08-28"
+  },
+  {
+    "slug": "docker-in-practice",
+    "title": "Docker in Practice",
+    "subtitle": "Builds that are fast, small, and safe",
+    "description": "The working engineer\u2019s Docker: multi-stage builds, BuildKit cache and secret mounts, multi-platform images, Bake, the Compose features a real project needs, lifecycle done properly, and build cache that survives CI.",
+    "level": "Intermediate",
+    "tags": [
+      "docker",
+      "buildkit",
+      "compose",
+      "ci-cd",
+      "devops"
+    ],
+    "lessons": [
+      {
+        "slug": "multi-stage-builds",
+        "title": "Multi-Stage Builds",
+        "summary": "Stop shipping the compiler. One keyword, two orders of magnitude.",
+        "src": "01-multi-stage-builds.md",
+        "minutes": 10
+      },
+      {
+        "slug": "buildkit-and-mounts",
+        "title": "BuildKit and Mounts",
+        "summary": "The syntax line, heredocs, and cache mounts that never enter the image.",
+        "src": "02-buildkit-and-mounts.md",
+        "minutes": 11
+      },
+      {
+        "slug": "secrets-and-configuration",
+        "title": "Secrets and Configuration",
+        "summary": "Every way a credential ends up in a layer, and the one way it does not.",
+        "src": "03-secrets-and-configuration.md",
+        "minutes": 11
+      },
+      {
+        "slug": "multi-platform-images",
+        "title": "Multi-Platform Images",
+        "summary": "One tag for ARM and x86 \u2014 emulation, cross-compilation, or native nodes.",
+        "src": "04-multi-platform-images.md",
+        "minutes": 11
+      },
+      {
+        "slug": "docker-bake",
+        "title": "Docker Bake",
+        "summary": "Declarative builds, and the builder Compose v5 now delegates to.",
+        "src": "05-docker-bake.md",
+        "minutes": 10
+      },
+      {
+        "slug": "compose-for-real-apps",
+        "title": "Compose for Real Applications",
+        "summary": "Overrides, profiles, include, and init containers that replace entrypoint scripts.",
+        "src": "06-compose-for-real-apps.md",
+        "minutes": 10
+      },
+      {
+        "slug": "compose-watch",
+        "title": "Compose Watch",
+        "summary": "A development loop without rebuilds, and why it beats a bind mount.",
+        "src": "07-compose-watch.md",
+        "minutes": 11
+      },
+      {
+        "slug": "healthchecks-and-signals",
+        "title": "Healthchecks and Signals",
+        "summary": "Starting, stopping, and failing on purpose \u2014 including the ten-second stop.",
+        "src": "08-healthchecks-and-signals.md",
+        "minutes": 11
+      },
+      {
+        "slug": "build-cache-across-machines",
+        "title": "Build Cache Across Machines",
+        "summary": "Making CI as fast as your laptop, and the flag everyone forgets.",
+        "src": "09-build-cache-across-machines.md",
+        "minutes": 11
+      },
+      {
+        "slug": "small-images-on-purpose",
+        "title": "Small Images on Purpose",
+        "summary": "Measure first, then the moves that matter \u2014 and when to stop.",
+        "src": "10-small-images-on-purpose.md",
+        "minutes": 12
+      }
+    ],
+    "pinned": {
+      "versions": [
+        {
+          "name": "Docker Engine",
+          "version": "29.7.2"
+        },
+        {
+          "name": "Docker Compose",
+          "version": "v5.5.0"
+        },
+        {
+          "name": "Buildx",
+          "version": "v0.36.1"
+        },
+        {
+          "name": "BuildKit",
+          "version": "v0.32.2"
+        },
+        {
+          "name": "Dockerfile frontend",
+          "version": "1.26.0"
+        },
+        {
+          "name": "Docker Desktop",
+          "version": "4.88.1"
+        }
+      ],
+      "docs": {
+        "label": "docs.docker.com",
+        "url": "https://docs.docker.com/"
+      },
+      "checked": "2026-08-28"
+    },
+    "date": "2026-08-28",
+    "updated": "2026-08-28"
+  },
+  {
+    "slug": "containers-from-scratch",
+    "title": "Containers From Scratch",
+    "subtitle": "No Docker, no containerd, no magic",
+    "description": "Build a container by hand from the Linux primitives underneath it \u2014 namespaces, cgroups, chroot, veth pairs, NAT, and copy-on-write snapshots. No container runtime is installed at any point, and by the end the whole stack stops being magic.",
+    "level": "Advanced",
+    "tags": [
+      "containers",
+      "linux",
+      "docker",
+      "namespaces",
+      "cgroups"
+    ],
+    "lessons": [
+      {
+        "slug": "what-a-container-really-is",
+        "title": "What a Container Really Is",
+        "summary": "Not a small VM \u2014 a process that has been lied to.",
+        "src": "01-what-a-container-really-is.md",
+        "minutes": 9
+      },
+      {
+        "slug": "namespaces",
+        "title": "Namespaces",
+        "summary": "The mechanism that decides what a process can see.",
+        "src": "02-namespaces.md",
+        "minutes": 12
+      },
+      {
+        "slug": "the-root-filesystem",
+        "title": "The Root Filesystem",
+        "summary": "chroot, a real Alpine userland, and why /proc has to be mounted.",
+        "src": "03-the-root-filesystem.md",
+        "minutes": 10
+      },
+      {
+        "slug": "copy-on-write",
+        "title": "Copy-on-Write",
+        "summary": "btrfs snapshots, and what an image layer actually is.",
+        "src": "04-copy-on-write.md",
+        "minutes": 11
+      },
+      {
+        "slug": "networking",
+        "title": "Networking",
+        "summary": "A network namespace, a bridge, and a virtual cable between them.",
+        "src": "05-networking.md",
+        "minutes": 12
+      },
+      {
+        "slug": "nat",
+        "title": "NAT",
+        "summary": "Three iptables rules that get a private address onto the internet.",
+        "src": "06-nat.md",
+        "minutes": 10
+      },
+      {
+        "slug": "cgroups",
+        "title": "Control Groups",
+        "summary": "Capping what a container consumes, and where OOMKilled comes from.",
+        "src": "07-cgroups.md",
+        "minutes": 11
+      },
+      {
+        "slug": "assembling-a-container",
+        "title": "Assembling a Container",
+        "summary": "One command, four cages, and a shell that believes it owns the machine.",
+        "src": "08-assembling-a-container.md",
+        "minutes": 12
+      },
+      {
+        "slug": "cleanup-and-what-docker-adds",
+        "title": "Cleanup, and What Docker Adds",
+        "summary": "Tearing it down, and the debugging map the whole thing adds up to.",
+        "src": "09-cleanup-and-what-docker-adds.md",
+        "minutes": 12
+      }
+    ],
+    "date": "2026-08-28",
+    "updated": "2026-08-28"
+  },
+  {
+    "slug": "docker-in-production",
+    "title": "Docker in Production",
+    "subtitle": "Security, supply chain, and the engine underneath",
+    "description": "What changes when containers carry real traffic: the daemon\u2019s internals, dropping privileges, resource limits, SBOMs and provenance, Scout, hardened base images, Sigstore signing, observability, and running AI models with Model Runner.",
+    "level": "Advanced",
+    "tags": [
+      "docker",
+      "security",
+      "supply-chain",
+      "observability",
+      "devops"
+    ],
+    "lessons": [
+      {
+        "slug": "the-engine-underneath",
+        "title": "The Engine Underneath",
+        "summary": "dockerd, containerd, shims and runc \u2014 and why containers survive a daemon restart.",
+        "src": "01-the-engine-underneath.md",
+        "minutes": 11
+      },
+      {
+        "slug": "container-security",
+        "title": "Container Security",
+        "summary": "Non-root, dropped capabilities, seccomp, read-only roots, and rootless mode.",
+        "src": "02-container-security.md",
+        "minutes": 12
+      },
+      {
+        "slug": "resource-limits",
+        "title": "Resource Limits",
+        "summary": "Capping memory and CPU, and why your runtime cannot see the limit.",
+        "src": "03-resource-limits.md",
+        "minutes": 13
+      },
+      {
+        "slug": "supply-chain-and-attestations",
+        "title": "Supply Chain and Attestations",
+        "summary": "SBOMs, provenance, and why production deploys by digest.",
+        "src": "04-supply-chain-and-attestations.md",
+        "minutes": 10
+      },
+      {
+        "slug": "docker-scout",
+        "title": "Docker Scout",
+        "summary": "Turning a CVE list into a task list \u2014 and gating on the delta, not the total.",
+        "src": "05-docker-scout.md",
+        "minutes": 11
+      },
+      {
+        "slug": "hardened-base-images",
+        "title": "Hardened Base Images",
+        "summary": "Distroless, DHI, and VEX: removing packages instead of triaging them.",
+        "src": "06-hardened-base-images.md",
+        "minutes": 12
+      },
+      {
+        "slug": "signing-and-trust",
+        "title": "Signing and Trust",
+        "summary": "Content Trust is gone. Sigstore, cosign, and what a signature actually proves.",
+        "src": "07-signing-and-trust.md",
+        "minutes": 10
+      },
+      {
+        "slug": "observability",
+        "title": "Observability",
+        "summary": "Logging drivers, events, and finding the crash loop that looks healthy.",
+        "src": "08-observability.md",
+        "minutes": 12
+      },
+      {
+        "slug": "ai-workloads",
+        "title": "AI Workloads",
+        "summary": "Model Runner, models in Compose, GPUs, and what is different about operating a model.",
+        "src": "09-ai-workloads.md",
+        "minutes": 12
+      }
+    ],
+    "pinned": {
+      "versions": [
+        {
+          "name": "Docker Engine",
+          "version": "29.7.2"
+        },
+        {
+          "name": "Docker Compose",
+          "version": "v5.5.0"
+        },
+        {
+          "name": "Buildx",
+          "version": "v0.36.1"
+        },
+        {
+          "name": "BuildKit",
+          "version": "v0.32.2"
+        },
+        {
+          "name": "Dockerfile frontend",
+          "version": "1.26.0"
+        },
+        {
+          "name": "Docker Desktop",
+          "version": "4.88.1"
+        }
+      ],
+      "docs": {
+        "label": "docs.docker.com",
+        "url": "https://docs.docker.com/"
+      },
+      "checked": "2026-08-28"
+    },
+    "date": "2026-08-28",
+    "updated": "2026-08-28"
+  }
+]

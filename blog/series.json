@@ -1,0 +1,20 @@
+[
+	{
+		"slug": "agents-in-production",
+		"title": "Agents in production",
+		"tagline": "Everything between a working demo and a system you can leave running.",
+		"description": "An LLM agent that works in a demo and an LLM agent you can put in front of users are different artifacts. This series is about the second one: how narrow to scope it, why orchestration is not reasoning, where long-running work actually belongs, and what breaks first."
+	},
+	{
+		"slug": "trustworthy-llm-output",
+		"title": "Making LLM output trustworthy",
+		"tagline": "Evaluation, constraints and observability for systems that are allowed to be wrong.",
+		"description": "You cannot unit-test a probability distribution, but you can constrain it, measure it, and watch it. This series covers evaluating an LLM feature before you ship it, forcing structure instead of reviewing prose, testing one prompt a hundred times, and instrumenting what the model actually did."
+	},
+	{
+		"slug": "llm-architecture-and-cost",
+		"title": "The architecture and cost of LLM features",
+		"tagline": "Where the model belongs in your system, and what it costs when it is there.",
+		"description": "Most production systems want AI at the edges and deterministic code in the core. This series is about making that placement call deliberately: what to model and what to write as rules, what an LLM feature really costs to run at volume, and what context it needs to be worth anything."
+	}
+]

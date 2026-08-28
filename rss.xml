@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nizar — theonlyengineer.com</title>
+    <link>https://theonlyengineer.com</link>
+    <description>Notes from building generative-AI systems that survive real users: agents in production, evaluating LLM output, and the architecture and cost underneath.</description>
+    <language>en</language>
+    <managingEditor>nizar@theonlyengineer.com (Nizar)</managingEditor>
+    <atom:link href="https://theonlyengineer.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Context is the hard part, and nobody sets out to build it</title>
+      <link>https://theonlyengineer.com/blog/context-is-the-hard-part</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/context-is-the-hard-part</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Why the same AI feature works at one company and fails at another: canonical definitions, current signals, and quality enforcement — the layers nobody budgets for.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>llm-architecture-and-cost</category>
+      <category>context</category>
+      <category>architecture</category>
+      <category>production</category>
+    </item>
+    <item>
+      <title>The most expensive call is the one that fails after trying hardest</title>
+      <link>https://theonlyengineer.com/blog/the-most-expensive-call-is-the-one-that-fails</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/the-most-expensive-call-is-the-one-that-fails</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>In a step-billed system your costliest interactions are the ones the model works hardest on and still can&apos;t finish. The effort paradox, and the four controls that bound it.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>llm-architecture-and-cost</category>
+      <category>cost</category>
+      <category>agents</category>
+      <category>production</category>
+    </item>
+    <item>
+      <title>What an LLM feature actually costs to run</title>
+      <link>https://theonlyengineer.com/blog/what-an-llm-feature-costs-to-run</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/what-an-llm-feature-costs-to-run</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Cost is steps times tokens times retries, the failures dominate, and the pilot will not show you. The four buckets to model and the levers that actually move the bill.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>llm-architecture-and-cost</category>
+      <category>cost</category>
+      <category>architecture</category>
+      <category>production</category>
+    </item>
+    <item>
+      <title>Where AI belongs in your architecture — and where it doesn&apos;t</title>
+      <link>https://theonlyengineer.com/blog/where-ai-belongs-in-your-architecture</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/where-ai-belongs-in-your-architecture</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Models at the edges, deterministic code in the core. The patterns that don&apos;t need a model, the ones where it earns its keep, and the question to ask before adding it.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>llm-architecture-and-cost</category>
+      <category>architecture</category>
+      <category>llm</category>
+      <category>cost</category>
+    </item>
+    <item>
+      <title>You can&apos;t debug what you can&apos;t see: observability for LLM features</title>
+      <link>https://theonlyengineer.com/blog/observability-for-llm-features</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/observability-for-llm-features</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>What to record on every model call, why the rendered prompt is the field that matters most, and why instrumentation has to exist before the first incident.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>trustworthy-llm-output</category>
+      <category>observability</category>
+      <category>production</category>
+      <category>llm</category>
+    </item>
+    <item>
+      <title>Test one prompt a hundred times, not a hundred prompts once</title>
+      <link>https://theonlyengineer.com/blog/test-one-prompt-a-hundred-times</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/test-one-prompt-a-hundred-times</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Single-run prompt testing hides variance, tail latency, token spread and intermittent misbehaviour. How to build the batch harness that surfaces them.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>trustworthy-llm-output</category>
+      <category>evals</category>
+      <category>testing</category>
+      <category>llm</category>
+    </item>
+    <item>
+      <title>Constrain the model, don&apos;t review its output</title>
+      <link>https://theonlyengineer.com/blog/constrain-the-model-dont-review-it</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/constrain-the-model-dont-review-it</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Inconsistent generated output is a constraint problem, not a capability problem. Schemas and closed vocabularies beat review queues, and here is why.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>trustworthy-llm-output</category>
+      <category>llm</category>
+      <category>architecture</category>
+      <category>testing</category>
+    </item>
+    <item>
+      <title>How to evaluate an LLM feature before you ship it</title>
+      <link>https://theonlyengineer.com/blog/how-to-evaluate-an-llm-feature</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/how-to-evaluate-an-llm-feature</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Why normal testing doesn&apos;t work on a probability distribution, what goes in an adversarial case set, and how to score it without fooling yourself.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>trustworthy-llm-output</category>
+      <category>evals</category>
+      <category>llm</category>
+      <category>testing</category>
+    </item>
+    <item>
+      <title>An agent is a state machine with an LLM picking the transitions</title>
+      <link>https://theonlyengineer.com/blog/an-agent-is-a-state-machine</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/an-agent-is-a-state-machine</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Orchestration is not reasoning. Which decisions to encode in code, which to leave to the model, and what an explicit generation graph buys you.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>agents-in-production</category>
+      <category>agents</category>
+      <category>architecture</category>
+    </item>
+    <item>
+      <title>Long-running agents belong in a queue, not a request</title>
+      <link>https://theonlyengineer.com/blog/long-running-agents-belong-in-a-queue</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/long-running-agents-belong-in-a-queue</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Why multi-step generation cannot live in an HTTP request, what the queue-plus-stream architecture looks like, and the worker settings that decide whether it degrades gracefully.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>agents-in-production</category>
+      <category>agents</category>
+      <category>architecture</category>
+      <category>production</category>
+    </item>
+    <item>
+      <title>Your agent doesn&apos;t need to be smart. It needs to be narrow.</title>
+      <link>https://theonlyengineer.com/blog/narrow-agents-beat-smart-ones</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/narrow-agents-beat-smart-ones</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>A boring agent that produces a useful artifact every time beats a clever one that mostly does. How to scope a task narrowly enough to be validated, tested and trusted.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>agents-in-production</category>
+      <category>agents</category>
+      <category>production</category>
+    </item>
+    <item>
+      <title>What it actually takes to put an LLM agent in production</title>
+      <link>https://theonlyengineer.com/blog/what-it-takes-to-ship-an-llm-agent</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/what-it-takes-to-ship-an-llm-agent</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>The checklist that separates a working demo from a system you can leave running: scope, control flow, queues, evaluation, constraints, cost and visibility.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>agents-in-production</category>
+      <category>agents</category>
+      <category>production</category>
+      <category>llm</category>
+    </item>
+    <item>
+      <title>Modernizing OnPrem Infrastructure</title>
+      <link>https://theonlyengineer.com/blog/modernizing-on-prem-infrastructure</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/modernizing-on-prem-infrastructure</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Bringing cloud-native tools into your on-prem infrastructure for automation and resiliency.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>hpc</category>
+      <category>cloudstack</category>
+      <category>virtualization</category>
+    </item>
+    <item>
+      <title>Automating HPC Infrastructure</title>
+      <link>https://theonlyengineer.com/blog/automating-hpc-infrastructure</link>
+      <guid isPermaLink="true">https://theonlyengineer.com/blog/automating-hpc-infrastructure</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Using Apache CloudStack to manage cloud resources in your on-prem infrastructure.</description>
+      <author>nizar@theonlyengineer.com (Nizar)</author>
+      <category>hpc</category>
+      <category>cloudstack</category>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,1 @@
+import{b as s,o,w as a,r as l,e as n}from"./C_4vwXAE.js";const c={__name:"section-title",props:{as:{type:String,default:"h2"}},setup(t){return(e,r)=>(o(),s(n(t.as),{class:"text-3xl sm:text-5xl lg:text-6xl lg:font-semibold font-medium font-serif m-0"},{default:a(()=>[l(e.$slots,"default")]),_:3}))}};export{c as _};
